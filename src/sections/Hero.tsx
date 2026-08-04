@@ -14,7 +14,7 @@ export default function Hero() {
                     transition={{ duration: 0.5 }}
                     className="text-cyan-400 text-xl font-semibold"
                 >
-                    Bonjour, je me présente
+                    5 ans d&apos;expérience · Bonjour, je me présente
                 </motion.p>
 
                 <motion.h1
@@ -37,7 +37,7 @@ export default function Hero() {
                     <div className="pl-32 text-4xl font-light">
                         <p>Développeur FullStack</p>
                         <p>&</p>
-                        <p>Technicien Support IT</p>
+                        <p>Expert Support IT</p>
                     </div>
                 </motion.div>
 

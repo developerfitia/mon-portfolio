@@ -3,6 +3,8 @@
 import { motion } from 'framer-motion'
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaGithub, FaLinkedin } from 'react-icons/fa'
 
+const domains = ['FullStack', 'Support IT', 'DevOps', 'Freelance', 'CDI', 'Remote']
+
 export default function Contact() {
   return (
     <section id="contact" className="w-full bg-[#0a0a0a] py-20 px-6 text-white max-w-7xl mx-auto">
@@ -17,8 +19,20 @@ export default function Contact() {
         <div className="md:w-1/2 space-y-6">
           <h3 className="text-cyan-400 text-xl font-semibold">Opportunités professionnelles</h3>
           <p className="text-gray-300">
-            Vous recherchez un stagiaire motivé ou un collaborateur pour votre équipe ? Je suis ouvert aux opportunités de stage et d’emploi dans le domaine du développement. N’hésitez pas à me contacter pour discuter de comment je pourrais contribuer à votre entreprise.
+            Développeur FullStack avec 5 ans d&apos;expérience, je suis disponible pour des missions en <span className="text-cyan-400 font-semibold">freelance</span> ou en <span className="text-cyan-400 font-semibold">CDI</span>, de préférence en <span className="text-pink-400 font-semibold">remote</span>. Que ce soit pour construire une application web, maintenir un système IT ou accompagner une équipe technique, je m&apos;adapte rapidement aux besoins.
           </p>
+
+          {/* Badges */}
+          <div className="flex flex-wrap gap-2">
+            {domains.map((tag) => (
+              <span
+                key={tag}
+                className="px-3 py-1 text-sm rounded-full border border-cyan-500 text-cyan-400 bg-[#0f1a1f] hover:bg-cyan-500 hover:text-black transition-colors duration-200"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
 
           <div className="space-y-4">
             <div className="flex items-center gap-3">
@@ -39,7 +53,7 @@ export default function Contact() {
               <FaMapMarkerAlt className="text-red-500" />
               <div>
                 <p className="text-sm text-white">Localisation</p>
-                <p className="text-gray-400">Fianarantsoa , Soatsihadino</p>
+                <p className="text-gray-400">Fianarantsoa, Madagascar · Remote</p>
               </div>
             </div>
           </div>
@@ -62,12 +76,13 @@ export default function Contact() {
               <input type="email" placeholder="Votre email" className="w-full px-4 py-2 bg-[#0a0a0a] text-white border border-gray-700 rounded" />
             </div>
             <select className="w-full px-4 py-2 bg-[#0a0a0a] text-white border border-gray-700 rounded">
-              <option>Sélectionnez une option</option>
-              <option>Stage</option>
+              <option>Sélectionnez un type de contrat</option>
               <option>Freelance</option>
-              <option>CDI / CDD</option>
+              <option>CDI</option>
+              <option>CDD</option>
+              <option>Régie / Consulting</option>
             </select>
-            <textarea rows={4} placeholder="Décrivez l’opportunité, les compétences recherchées..." className="w-full px-4 py-2 bg-[#0a0a0a] text-white border border-gray-700 rounded"></textarea>
+            <textarea rows={4} placeholder="Décrivez l'opportunité, les compétences recherchées..." className="w-full px-4 py-2 bg-[#0a0a0a] text-white border border-gray-700 rounded"></textarea>
             <button
               type="submit"
               className="w-full py-2 bg-gradient-to-r from-pink-500 to-cyan-500 text-white font-semibold rounded shadow"
