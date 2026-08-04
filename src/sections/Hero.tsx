@@ -35,7 +35,7 @@ export default function Hero() {
                 >
                     <div className="absolute left-0 top-[48px] w-20 h-2 bg-gradient-to-r from-red-500 to-cyan-500 rounded-full" />
                     <div className="pl-32 text-4xl font-light">
-                        <p>Développeur Front-end</p>
+                        <p>Développeur FullStack</p>
                         <p>&</p>
                         <p>Technicien Support IT</p>
                     </div>

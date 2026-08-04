@@ -4,8 +4,9 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 
 const skills = [
-  { title: 'Flutter', desc: 'Mobile Framework', icon: '/icons/flutter.png' },
-  { title: 'Dart', desc: 'Programming Language', icon: '/icons/dart.png' },
+  { title: 'Django', desc: 'Python Framework', icon: '/images/django.png' },
+  { title: 'Java', desc: 'Programming Language', icon: '/icons/java.png' },
+  { title: 'Supabase', desc: 'Programming Language', icon: '/icons/supabase.png' },
   { title: 'Next.js', desc: 'Web Framework', icon: '/icons/nextjs.png' },
   { title: 'React', desc: 'Web Framework', icon: '/icons/react.png' },
   { title: 'NestJS', desc: 'Backend Framework', icon: '/icons/nestjs.png' },
